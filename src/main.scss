@@ -1,0 +1,15 @@
+/*$grey:         #CCCCCC;
+$lighter-grey: #EAEAEA;
+
+$accent-green: #5cb85c;
+$green: #4cae4c;
+
+@import "./directives/imageViewer/imageViewer.scss";
+*/
+@import "../src/modules/root/navbar.scss";
+@import "../src/directives/shirtDisplay/shirtDisplay.scss";
+@import "../src/directives/changeColor/changeColor.scss";
+
+.icon-lg {
+	font-size: 20px;
+}

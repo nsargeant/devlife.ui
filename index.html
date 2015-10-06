@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>{%= o.htmlWebpackPlugin.options.title %}</title>
+	<base href="/">
+</head>
+<body ng-app="devLife">
+	<div class="container">
+		<ui-view></ui-view>
+	</div>
+
+	{% if (o.webpackConfig.port) { %}
+		<script src="http://localhost:{%= o.webpackConfig.port %}/webpack-dev-server.js"></script>
+	{% } %}
+</body>
+</html>

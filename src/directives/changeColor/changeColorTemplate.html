@@ -1,0 +1,11 @@
+<div class="dropdown change-color">
+  <button class="btn btn-default dropdown-toggle" type="button" id="colorMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="glyphicon glyphicon-tint"></span>
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="colorMenu">
+    <li ng-repeat="color in changeColor.availableColors">
+      <button class="btn btn-color-option" style="background-color: {{color}}" ng-click="changeColor.select(color)"></button>
+    </li>
+  </ul>
+</div>
